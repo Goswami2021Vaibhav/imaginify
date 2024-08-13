@@ -107,7 +107,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
                         router.push(`/transformations/${newImage._id}`)
                     }
                 } catch (error) {
-                    console.log(error);
+                    console.log(error);  
                 }
             }
 
@@ -285,7 +285,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
 
                     <TransformedImage
                         image={image}
-                    type={type}
+                        type={type}
                         title={form.getValues().title}
                         isTransforming={isTransforming}
                         setIsTransforming={setIsTransforming}
